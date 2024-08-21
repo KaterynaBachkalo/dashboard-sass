@@ -36,3 +36,12 @@
       'co-workers reports';
   }
 }
+
+.companies-main {
+  padding: 16px;
+
+  @include mx.mq('md') {
+    gap: 36px;
+    padding: 36px;
+  }
+}
