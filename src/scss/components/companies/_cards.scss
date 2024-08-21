@@ -1,0 +1,50 @@
+@use '../../utils/variables' as var;
+@use '../../utils/functions' as fn;
+@use '../../utils/placeholders';
+@use '../../utils/mixins' as mx;
+
+.cards {
+  @extend %main-text;
+}
+
+.cards-list {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-item {
+  background-color: fn.get-color('dark-tertiary');
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.cards-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards-title {
+  @extend %accent-text;
+  color: fn.get-color('light');
+}
+
+.cards-icon {
+  fill: fn.get-color('light');
+}
+
+.cards-icon-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cards-icon-geotag {
+  fill: fn.get-color('success');
+}
+
+.cards-address {
+  @extend %main-text;
+}
