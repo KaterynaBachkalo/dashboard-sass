@@ -1,0 +1,27 @@
+@use '../../utils/placeholders';
+@use '../../utils/variables' as var;
+@use '../../utils/functions' as fn;
+@use '../../utils/mixins' as mx;
+
+.companies-welcome {
+  margin-bottom: 40px;
+
+  @include mx.mq('lg') {
+    margin-bottom: 36px;
+  }
+}
+
+.page-title {
+  &-accent {
+    @extend %main-text;
+
+    display: block;
+    margin-bottom: 8px;
+
+    color: fn.get-color('light-primary');
+
+    @include mx.mq('lg') {
+      margin-bottom: 16px;
+    }
+  }
+}
