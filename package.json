@@ -1,11 +1,11 @@
 {
-  "name": "dashboard-sass-course",
+  "name": "dashboard-sass",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/dashboard-sass-course/",
+    "build": "vite build --base=/dashboard-sass/",
     "preview": "vite preview",
     "watch": "npx vite build --watch"
   },
